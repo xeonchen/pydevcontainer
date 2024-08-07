@@ -1,0 +1,14 @@
+{
+    "name": "Python Dev Environment",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": "..",
+        "args": {
+            "PYTHON_VERSION": "3.12-alpine"
+        }
+    },
+    "extensions": ["ms-python.python"],
+    "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+    "workspaceFolder": "/workspace",
+    "runArgs": []
+}
